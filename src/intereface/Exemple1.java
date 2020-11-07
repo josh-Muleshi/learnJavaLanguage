@@ -23,6 +23,8 @@ class Exmple1 extends JFrame implements ActionListener {
         contentPane.add(btnActivateMe);
 
         btnClickMe.addActionListener(this);
+        btnPushMe.addActionListener(this);
+        btnActivateMe.addActionListener(this);
 
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
@@ -35,7 +37,13 @@ class Exmple1 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Button \"Click Me\" Clicked ");
+        if (e.getSource() == btnClickMe){
+            this.setTitle("Click Me");
+        }else if (e.getSource() == btnPushMe) {
+            this.setTitle("Push Me");
+        }else if (e.getSource() == btnActivateMe) {
+            this.setTitle("Activate Me");
+        }
     }
 }
 
