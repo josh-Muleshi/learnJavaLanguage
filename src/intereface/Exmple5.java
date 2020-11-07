@@ -33,10 +33,20 @@ public class Exmple5 extends JFrame {
         });*/
 
         //btnClickMe.addActionListener((e) -> System.out.println("ok"));
+        /*btnClickMe.addActionListener((e) -> {
+            System.out.println("ok");
+        });*/
+        //btnClickMe.addActionListener( e -> btnClickMeListener(e));
+        btnClickMe.addActionListener(this::btnClickMeListener);
+
 
         this.setSize(600, 400);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+    }
+
+    private void btnClickMeListener(ActionEvent e) {
+        System.out.println("ok");
     }
 
     public static void main(String[] args) {
