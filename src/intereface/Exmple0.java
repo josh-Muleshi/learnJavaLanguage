@@ -5,6 +5,8 @@ import java.awt.*;
 
 public class Exmple0 extends JFrame {
 
+    private static final long serialVersionUID = -5488220951900494888L;
+
     private JButton btnClickMe = new JButton("Click Me");
     private JButton btnPushMe = new JButton("Click Me");
     private JButton btnActivateMe = new JButton("Click Me");
