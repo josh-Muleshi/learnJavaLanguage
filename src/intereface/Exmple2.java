@@ -7,7 +7,7 @@ public class Exmple2 extends JFrame {
 
     private static final long serialVersionUID = -5488220951900494888L;
 
-    private JButton btnClickMe = new JButton("Click Me");
+    public JButton btnClickMe = new JButton("Click Me");
     private JButton btnPushMe = new JButton("Click Me");
     private JButton btnActivateMe = new JButton("Click Me");
 
@@ -18,7 +18,7 @@ public class Exmple2 extends JFrame {
         JPanel contentPane = (JPanel) this.getContentPane();
         contentPane.setLayout( new FlowLayout());
 
-        contentPane.add( btnClickMe);
+        contentPane.add(btnClickMe);
         contentPane.add(btnPushMe);
         contentPane.add(btnActivateMe);
 
